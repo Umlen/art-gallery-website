@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Outfit:wght@300&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 22px;
+}
+
+body {
+    font-family: "Outfit", "Arial", sans-serif;
+    color: #151515;
+}
+
+p {
+    line-height: 32px;
+}
+
+h1, h2, h3, a {
+    font-family: "Big Shoulders Display", "Lucida Calligraphy", cursive;
+}
+
+h1 {
+    position: absolute;
+    top: 189px;
+    left: 165px;
+    font-size: 96px;
+    line-height: 4rem;
+    white-space: pre-line;
+    background-image: linear-gradient(90deg,
+        #fff 0, #fff 3em,
+        #151515 3em, #151515 5em
+    );
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+h3 {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 32px;
+}
+
+.black-block {
+    background-color: #151515;
+    color: #fff;
+}
+
+/*HEADER*/
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-right: 165px;
+    line-height: 0;
+}
+
+#right-header-block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 450px;
+    height: 100%;
+}
+
+#header-img {
+    position: relative;
+    left: 450px;
+    top: 0;
+}
+
+#header-paragraph {
+    position: absolute;
+    right: 0;
+    top: 190px;
+    width: 350px;
+}
+
+/*BUTTON*/
+
+.button-arrows {
+    background-color: #d5966c;
+    width: 56px;
+    height: 72px;
+    float: right;
+}
+
+.button-block {
+    display: block;
+    position: absolute;
+    width: 260px;
+    height: 72px;
+    text-align: center;
+}
+
+.button-text {
+    font-size: 20px;
+    letter-spacing: 3.64px;
+    margin: 24px 0 24px 32px;
+    float: left;
+    line-height: 24px;
+}
+
+#location-button {
+    right: 90px;
+    top: 414px;
+}
+
+#location-button:hover .button-arrows{
+    background-color: #151515;
+}
+
+#location-button:hover {
+    background-color: #d5966c;
+    cursor: pointer;
+}
+
+/*GRID-SECTION*/
+
+.grid-container {
+    padding: 180px 11.45%;
+    display: grid;
+    width: 77%;
+    grid-template-areas: 
+        "first-grid-article first-grid-img first-grid-img"
+        "second-grid-img  second-grid-img third-grid-img"
+        "second-grid-img  second-grid-img last-grid-article";
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 40% 14% 40%;
+    gap: 30px;
+}
+
+#first-grid-article {
+    grid-area: first-grid-article;
+    margin: 30px 125px 90px 0;
+    width: 350px;
+    height: 280px;
+}
+
+#first-grid-img {
+    grid-area: first-grid-img;
+    background-image: url("../assets/desktop/image-grid-1@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#second-grid-img {
+    grid-area: second-grid-img;
+    background-image: url("../assets/desktop/image-grid-2@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#third-grid-img {
+    grid-area: third-grid-img;
+    width: 100%;
+    height: auto;
+}
+
+#last-grid-article {
+    grid-area: last-grid-article;
+    width: 100%;
+    height: 100%;
+}
+
+#last-grid-article div{
+    margin: 65px 48px;
+}
+
