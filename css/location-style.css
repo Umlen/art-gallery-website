@@ -1,0 +1,51 @@
+#map {
+    width: 100%;
+    height: auto;
+}
+
+.brown-block {
+    background-color: #d5966c;
+    color: #151515;
+}
+
+.svg-social-icons-black{
+    fill: #151515;
+}
+
+#fb-icon-svg-white:hover {
+    cursor: pointer;
+    fill: #fff;
+}
+
+#ig-icon-svg-white:hover {
+    cursor: pointer;
+    fill: #fff;
+}
+
+#tw-icon-svg-white:hover {
+    cursor: pointer;
+    fill: #fff;
+}
+
+#home-button img {
+    float: left;
+}
+
+#home-button .button-text{
+    float: right;
+    margin: 24px 35px 24px 0;
+}
+
+#home-button {
+    left: 156px;
+    width: 264px;
+}
+
+#home-button:hover .button-arrows{
+    background-color: #151515;
+}
+
+#home-button:hover {
+    background-color: #d5966c;
+    cursor: pointer;
+}

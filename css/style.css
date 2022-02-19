@@ -18,7 +18,7 @@ p {
     line-height: 32px;
 }
 
-h1, h2, h3, a {
+h1, h2, h3, h4, a {
     font-family: "Big Shoulders Display", "Lucida Calligraphy", cursive;
 }
 
@@ -38,10 +38,21 @@ h1 {
     background-clip: text;
 }
 
+h2 {
+    font-size: 70px;
+    line-height: 70px;
+}
+
 h3 {
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 32px;
+}
+
+h4 {
+    font-size: 36px;
+    line-height: 36px;
+    white-space: pre-line;
 }
 
 .black-block {
@@ -171,3 +182,46 @@ header {
     margin: 65px 48px;
 }
 
+/*FOOTER*/
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 80px 11.45%;
+}
+
+.flex-container p {
+    font-size: 18px;
+    line-height: 28px;
+    width: 430px;
+}
+
+.social-icons-list {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons-list > li {
+    padding-left: 20px;
+}
+
+.svg-social-icons-white{
+    fill: #fff;
+}
+
+#fb-icon-svg-brown:hover {
+    cursor: pointer;
+    fill: #d5966c;
+}
+
+#ig-icon-svg-brown:hover {
+    cursor: pointer;
+    fill: #d5966c;
+}
+
+#tw-icon-svg-brown:hover {
+    cursor: pointer;
+    fill: #d5966c;
+}
